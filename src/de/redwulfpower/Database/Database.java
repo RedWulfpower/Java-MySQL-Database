@@ -365,7 +365,8 @@ public class Database{
 	 */
 	public int Insert(String wo, String value){
 		
-		return this.Insert("INSERT INTO "+this.real_escape_string(this.getprefix()+wo)+" ");
+		return this.Insert("INSERT INTO "+this.real_escape_string(this.getprefix()+wo)+" "
+			+" VALUES('" +this.real_escape_string(value)+"'");
 	}
 	/*
 	 * INSERT INTO String  VALUES(String)  ORDER/GROUB BY / ..
