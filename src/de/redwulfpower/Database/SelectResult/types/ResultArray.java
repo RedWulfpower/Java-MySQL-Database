@@ -50,7 +50,7 @@ public class ResultArray {
 		if(rowid >= data.length){
 			return null;
 		}
-		// für -> rsk.get();   ohne   rsk.next(); rsk.get();
+		// fï¿½r -> rsk.get();   ohne   rsk.next(); rsk.get();
 		if(rowid == -1){
 			return data[0];
 		}
@@ -61,7 +61,7 @@ public class ResultArray {
 			return false;
 		}
 		
-		if(rowid+1 > data.length){
+		if(rowid+1 >= data.length){
 			return false;
 		}
 		rowid++;
